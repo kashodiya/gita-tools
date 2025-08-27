@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gita Tools - Interactive Learning Games</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .game-card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .game-title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        
+        .game-description {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 20px 0;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .play-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .play-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        .tech-info {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .game-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕉️ Gita Tools</h1>
+        <p class="subtitle">Interactive Learning Games for the Bhagavad Gita</p>
+        
+        <div class="game-card">
+            <div class="game-title">Gita Heart Game</div>
+            <div class="game-description">
+                An engaging browser-based game designed to help devotees and students deepen their knowledge 
+                of the Bhagavad Gita through interactive challenges and gameplay.
+            </div>
+            
+            <div class="features">
+                <strong>Game Features:</strong>
+                <ul>
+                    <li><strong>Verse Completion Challenge</strong> - Complete missing parts of Sanskrit verses</li>
+                    <li><strong>Verse Identification</strong> - Identify chapter and verse numbers from given text</li>
+                    <li><strong>Chapter Sequence Game</strong> - Arrange chapter names in correct order</li>
+                    <li><strong>Multi-language Support</strong> - Play in Sanskrit, English, or Hindi</li>
+                    <li><strong>Audio Rewards</strong> - Listen to authentic Sanskrit recitations</li>
+                    <li><strong>Optional Scoring</strong> - Track your progress with scoring system</li>
+                </ul>
+            </div>
+            
+            <a href="docs/index.html" class="play-button">🎮 Launch Game</a>
+            
+            <div class="tech-info">
+                <strong>Technical Details:</strong><br>
+                Built with Godot Engine • Runs in any modern web browser • No installation required<br>
+                Data includes 700+ verses, 18 chapters, multiple translations, and audio recitations
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <strong>About the Data:</strong> This game uses comprehensive Bhagavad Gita data including 
+                Sanskrit verses, transliterations, translations in multiple languages, detailed commentaries 
+                from various scholars, and authentic audio recitations.
+            </p>
+            <p>
+                Built with ❤️ for spiritual learning and growth
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

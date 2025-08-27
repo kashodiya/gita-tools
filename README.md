@@ -12,11 +12,20 @@ This is a monorepo containing multiple independent but related projects:
 
 ```
 gita-tools/
-├── .openhands/          # OpenHands configuration
-│   └── microagents/     # Microagent documentation
-├── [project-1]/         # Individual project directories
-├── [project-2]/         # (to be added as projects are developed)
-└── shared/              # Shared utilities and resources
+├── .openhands/              # OpenHands configuration
+│   └── microagents/         # Microagent documentation
+├── gita-heart-game/         # Interactive Gita learning game
+│   ├── godot-project/       # Godot game source code
+│   │   ├── scenes/          # Game scenes
+│   │   ├── scripts/         # Game logic scripts
+│   │   ├── data/            # Gita JSON data files
+│   │   └── web-build/       # Exported web version
+│   └── README.md
+├── data-prep/               # Data processing utilities
+├── docs/                    # GitHub Pages deployment
+│   └── index.html           # Web game files
+├── index.html               # Main landing page
+└── README.md
 ```
 
 ## Data Sources
@@ -49,7 +58,27 @@ This project utilizes data from the [gita/gita](https://github.com/gita/gita) re
 
 ## Projects
 
-*Projects will be documented here as they are added to the monorepo.*
+### 🎮 Gita Heart Game
+**Interactive web-based learning game for the Bhagavad Gita**
+
+- **Location**: `gita-heart-game/`
+- **Live Demo**: [Play Online](https://kashodiya.github.io/gita-tools/)
+- **Technology**: Godot Engine 4.3, WebAssembly
+- **Features**:
+  - Multiple game modes (Verse Completion, Verse Identification, Chapter Sequence)
+  - Multi-language support (Sanskrit, English, Hindi)
+  - Optional scoring system
+  - 700+ verses with authentic data
+  - Runs in any modern web browser
+
+**Quick Start**: Open `index.html` in your browser or visit the live demo above.
+
+### 📊 Data Preparation Tools
+**Utilities for processing and preparing Gita data**
+
+- **Location**: `data-prep/`
+- **Purpose**: Scripts and tools for data extraction, transformation, and validation
+- **Technology**: Python, JSON processing
 
 ## Contributing
 

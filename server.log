@@ -1,0 +1,9 @@
+Serving HTTP on 0.0.0.0 port 45000 (http://0.0.0.0:45000/) ...
+127.0.0.1 - - [27/Aug/2025 17:53:56] "HEAD /docs/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:11] "GET /docs/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:11] "GET /docs/index.png HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:11] "GET /docs/index.js HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:11] "GET /docs/index.wasm HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:11] "GET /docs/index.pck HTTP/1.1" 200 -
+127.0.0.1 - - [27/Aug/2025 17:54:12] "GET /docs/index.audio.worklet.js HTTP/1.1" 200 -
